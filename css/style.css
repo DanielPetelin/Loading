@@ -1,0 +1,19 @@
+body {
+    margin: 50px;
+}
+
+.hidden-block {
+    display: none;
+    font-family: Arial;
+    font-size: 70px;
+    color: rgb(0, 223, 11);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.progress {
+    height: 100px;
+    width: 1000px;
+    background-color: rgb(0, 223, 11);
+    border: 5px solid rgb(129, 129, 129);
+}

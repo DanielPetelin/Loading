@@ -1,3 +1,5 @@
+// крутая загрузка на джава скрипт.
+
 function userProgress(time) {
     var start = 0;
     var time = Math.round(time * 10);
@@ -5,6 +7,7 @@ function userProgress(time) {
     var intervalId = setInterval(function() {
         if (start > 100) {
             clearInterval(intervalId);
+            userProgressCallBack();
         } else {
             progressElement.value = start;
         };
@@ -12,4 +15,7 @@ function userProgress(time) {
     }, time);
 };
 
-userProgress(5);
+function userProgressCallBack() {
+    document.querySelector('.hidden-block').style.display = 'block';
+};
+userProgress(3);
